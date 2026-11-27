@@ -16,6 +16,15 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+      keyframes: {
+        'ambient-drift': {
+          '0%, 100%': { transform: 'translate(-50%, 0px) scale(1)', opacity: '0.85' },
+          '50%': { transform: 'translate(-47%, 18px) scale(1.06)', opacity: '1' },
+        },
+      },
+      animation: {
+        'ambient-drift': 'ambient-drift 16s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
